@@ -1,0 +1,26 @@
+<form>
+ <div class="container-fluid form-model" ng-controller="listarCtrl">
+  <h3>Listar dados de Cliente.</h3>
+  <div class="form-group">
+    <hr />
+    <input type="text" class="form-control" ng-model="Cliente.nome" name="nome" placeholder="Nome do Cliente" required>
+    <p>CPF:</p><label>{{Cliente.cpf}}</label>
+    <p>RG:</p><label>{{Cliente.rg}}</label>
+    <p>E-mail:</p><label>{{Cliente.email}}</label>
+    <p>Telefone:</p><label>{{Cliente.telefone}}</label>
+    <hr />
+    <button type="submit" class="btn btn-primary" ng-click="procurarDados()">Procurar</button>
+  </div>
+</div>
+</form>
+
+
+<!-- Small modal -->
+<div id="modal-listar" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <h3>Usuário não existente.</h3>
+      <hr />
+    </div>
+  </div>
+</div>

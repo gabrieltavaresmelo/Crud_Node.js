@@ -1,0 +1,33 @@
+<form id="form-atualizar" ng-controller="atualizarCtrl">
+   <div class="container-fluid form-model">
+    <h3>Atualizar dados cliente.</h3>
+    <div class="form-group">
+     <span class="form-label">Informe os dados abaixo:</span>
+      <input type="text" class="form-control" ng-model="Cliente.nome" placeholder="Nome Completo." name="name" required/>
+      <input type="text" class="form-control" ng-model="Cliente.cpf" placeholder="CPF (Somente números)." name="CPF" required/>
+      <input type="text" class="form-control" ng-model="Cliente.rg" placeholder="RG" name="rg" required/>
+      <input type="text" class="form-control" ng-model="Cliente.email" placeholder="E-mail" name="email" required/>
+      <input type="text" class="form-control" ng-model="Cliente.telefone" placeholder="Telefone" name="telefone" required/>
+      <hr/>
+      <button type="submit" class="btn btn-primary">Atualizar</button>
+    </div>
+  </div>
+</form>
+
+<!-- Small modal  Update-->
+<div id="modal-atualizar" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="inserirModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Status</h4>
+      </div>
+      <div class="modal-body">
+        <p>Dados atualizados com sucesso!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>

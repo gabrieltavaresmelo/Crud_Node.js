@@ -1,0 +1,38 @@
+body {
+}
+#navbar {
+  border-radius: 0px;
+  border: none;
+}
+.fadeIn.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+.fadeIn.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+/* Div de cadastro */
+.form-model {
+  max-width: 26em;
+}
+.form-model h3 {
+  text-align: left;
+  margin-bottom: 0.7em;
+}
+.form-model div input[type="text"]{
+  margin-bottom: 10px;
+}
+.form-model div button{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.form-model .form-label{
+  font-weight: 500;
+}
+#modal-listar{
+  padding: 0.8em;
+}
+#modal-listar h3{
+  text-align: center;
+}

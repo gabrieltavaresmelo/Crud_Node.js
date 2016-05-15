@@ -1,0 +1,30 @@
+<form id="form-deletar" ng-controller="deletarCtrl">
+   <div class="container-fluid form-model">
+    <h3>Deletar cliente.</h3>
+    <div class="form-group">
+      <span class="form-label">Informe o CPF do Cliente a deletar:</span>
+      <hr />
+      <input type="text" class="form-control" ng-model="cpf" placeholder="CPF (Somente Números)." name="nome" />
+      <hr />
+      <button class="btn btn-warning">Deletar Usuário</button>
+    </div>
+  </div>
+</form>
+
+<!-- Small modal Deletar -->
+<div id="modal-deletar" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="deletarModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Status</h4>
+      </div>
+      <div class="modal-body">
+        <p>Cliente deletado com sucesso!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
